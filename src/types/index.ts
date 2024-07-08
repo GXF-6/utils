@@ -1,6 +1,5 @@
 export type num_str = number | string
 
-
 export interface IUtils {
   /**
    * 判断是否为字符串
