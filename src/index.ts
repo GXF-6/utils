@@ -5,8 +5,8 @@ import date from "@utils/date";
 import type {IUtils} from "@/types";
 
 const _: IUtils = {
-  ...is,
   ...date,
+  ...is,
 }
 
 export default _
