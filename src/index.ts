@@ -1,12 +1,9 @@
 // 类型判断
-import is from '@utils/is'
+import is from '@/utils/is'
 // 日期相关
-import date from "@utils/date";
-import type {IUtils} from "@/types";
+import date from "@/utils/date";
 
-const _: IUtils = {
-  ...date,
-  ...is,
+export default {
+  date,
+  is
 }
-
-export default _
