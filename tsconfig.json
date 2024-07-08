@@ -80,7 +80,7 @@
     // "noEmitHelpers": true,                            /* Disable generating custom helper functions like '__extends' in compiled output. */
     // "noEmitOnError": true,                            /* Disable emitting files if any type checking errors are reported. */
     // "preserveConstEnums": true,                       /* Disable erasing 'const enum' declarations in generated code. */
-    "declarationDir": "dist/types",                              /* 指定生成的声明文件的输出目录。 */
+    "declarationDir": "dist/types",                      /* 指定生成的声明文件的输出目录。 */
 
     /* 操作约束 */
     "isolatedModules": true,                             /* 确保每个文件都可以安全地转译，而无需依赖其他导入。 */
