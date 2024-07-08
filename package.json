@@ -1,6 +1,6 @@
 {
   "name": "gxf-utils-es",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "自用函数工具类",
   "type": "module",
   "main": "./dist/index.cjs.js",
