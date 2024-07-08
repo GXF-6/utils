@@ -1,6 +1,6 @@
 {
-  "name": "gxf-utils",
-  "version": "0.2.0",
+  "name": "@atopos-gxf/utils",
+  "version": "0.1.0",
   "description": "自用函数工具类",
   "type": "module",
   "main": "./dist/index.cjs.js",
