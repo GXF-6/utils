@@ -1,12 +1,14 @@
 {
   "name": "gxf-utils",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "自用函数工具类",
   "type": "module",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.esm.js",
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "rollup -w -c",
     "build:types": "tsc -b ./tsconfig.json",
@@ -18,7 +20,9 @@
     "type": "git",
     "url": "https://github.com/GXF-6/utils.git"
   },
-  "keywords": ["utils"],
+  "keywords": [
+    "utils"
+  ],
   "author": "gxf",
   "license": "MIT",
   "publishConfig": {
