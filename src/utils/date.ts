@@ -69,7 +69,6 @@ export default {
     for (let k in o) {
       if (new RegExp('(' + k + ')').test(format)) {
         format = format.replace(RegExp.$1, (RegExp.$1.length === 1) ?
-          // @ts-ignore
           (o[k]) :
           (('00' + o[k as keyof typeof o]).substring(('' + o[k as keyof typeof o]).length)))
       }
