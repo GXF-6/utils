@@ -1,5 +1,3 @@
-/* 判断类型 */
-
 function is(val: any, type: string) {
   return toString.call(val) === `[object ${type}]`
 }
