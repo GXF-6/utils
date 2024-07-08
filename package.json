@@ -1,5 +1,5 @@
 {
-  "name": "utils",
+  "name": "gxf-utils",
   "version": "0.1.0",
   "description": "自用函数工具类",
   "type": "module",
