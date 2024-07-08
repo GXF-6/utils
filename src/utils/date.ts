@@ -19,7 +19,10 @@ function transferDate(date: Date): string {
 }
 
 export default {
-  getWeek: (startDate: number): Array<string> => {
+  /**
+   * 获取一周
+   * */
+  getWeek: (startDate?: number): Array<string> => {
     const weekShift = startDate || 0
 
     // 获取当前日期
@@ -75,8 +78,10 @@ export default {
   },
   /**
    * 判断传入日期（不传默认当前日期）是一年中的第几天
+   * @param date 日期
+   * @return {number}
    * */
-  dayOfYear: (date?: Date | string) => {
+  dayOfYear: (date?: Date | string): number => {
     let formatDate: Date | string
     if (!date) {
       formatDate = new Date()
