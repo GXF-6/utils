@@ -64,13 +64,15 @@ export default {
     }
 
     if (/(y+)/.test(format)) {
-      format = format.replace(RegExp.$1, (date.getFullYear() + '').substr(4 - RegExp.$1.length))
+      format = format.replace(RegExp.$1, (date.getFullYear() + '').substring(4 - RegExp.$1.length))
     }
     for (let k in o) {
       if (new RegExp('(' + k + ')').test(format)) {
-        format = format.replace(RegExp.$1, (RegExp.$1.length === 1) ?
-          (o[k]) :
-          (('00' + o[k as keyof typeof o]).substring(('' + o[k as keyof typeof o]).length)))
+        if (format.replace(RegExp.$1, String((RegExp.$1.length === 1)))) {
+          format = String(o[k as keyof typeof o])
+        } else {
+          format = (('00' + o[k as keyof typeof o]).substring(('' + o[k as keyof typeof o]).length))
+        }
       }
     }
     return format
@@ -94,7 +96,7 @@ export default {
     }
 
     const year = (formatDate as Date).getFullYear()
-    const firstDayOfYear =  new Date(year, 0 , 0)
+    const firstDayOfYear = new Date(year, 0, 0)
     const timeGap = (formatDate as Date).getTime() - firstDayOfYear.getTime()
     return Math.floor(timeGap / 1000 / 60 / 60 / 24)
   }
